@@ -1,0 +1,46 @@
+services:
+  db:
+    image: mariadb:11
+    environment:
+      MARIADB_DATABASE: ${DB_NAME:-bedrock}
+      MARIADB_USER: ${DB_USER:-bedrock}
+      MARIADB_PASSWORD: ${DB_PASSWORD:-bedrock}
+      MARIADB_ROOT_PASSWORD: ${DB_ROOT_PASSWORD:-root}
+    volumes:
+      - db_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  php:
+    build:
+      context: .
+      dockerfile: docker/php/Dockerfile
+    environment:
+      DB_HOST: db
+      DB_NAME: ${DB_NAME:-bedrock}
+      DB_USER: ${DB_USER:-bedrock}
+      DB_PASSWORD: ${DB_PASSWORD:-bedrock}
+      WP_HOME: ${WP_HOME:-http://localhost:8080}
+      WP_SITEURL: ${WP_SITEURL:-${WP_HOME}/wp}
+      WP_ENV: ${WP_ENV:-development}
+    volumes:
+      - ./:/var/www/html:delegated
+    depends_on:
+      db:
+        condition: service_healthy
+
+  web:
+    image: nginx:1.27-alpine
+    ports:
+      - "8080:80"
+    volumes:
+      - ./:/var/www/html:ro
+      - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+    depends_on:
+      - php
+
+volumes:
+  db_data:
