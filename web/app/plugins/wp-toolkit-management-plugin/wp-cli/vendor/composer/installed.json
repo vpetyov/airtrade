@@ -1,0 +1,1526 @@
+{
+    "packages": [
+        {
+            "name": "composer/semver",
+            "version": "3.4.4",
+            "version_normalized": "3.4.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/semver.git",
+                "reference": "198166618906cb2de69b95d7d47e5fa8aa1b2b95"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://artifacts.plesk.tech/artifactory/api/composer/packagist-plesk/vcs-dists/zip/composer/semver/198166618906cb2de69b95d7d47e5fa8aa1b2b95",
+                "reference": "198166618906cb2de69b95d7d47e5fa8aa1b2b95",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3.2 || ^7.0 || ^8.0"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^1.11",
+                "symfony/phpunit-bridge": "^3 || ^7"
+            },
+            "time": "2025-08-20T19:15:30+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "3.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Composer\\Semver\\": "src"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nils Adermann",
+                    "email": "naderman@naderman.de",
+                    "homepage": "http://www.naderman.de"
+                },
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "http://seld.be"
+                },
+                {
+                    "name": "Rob Bast",
+                    "email": "rob.bast@gmail.com",
+                    "homepage": "http://robbast.nl"
+                }
+            ],
+            "description": "Semver library that offers utilities, version constraint parsing and validation.",
+            "keywords": [
+                "semantic",
+                "semver",
+                "validation",
+                "versioning"
+            ],
+            "support": {
+                "irc": "ircs://irc.libera.chat:6697/composer",
+                "issues": "https://github.com/composer/semver/issues",
+                "source": "https://github.com/composer/semver/tree/3.4.4"
+            },
+            "funding": [
+                {
+                    "url": "https://packagist.com",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/composer",
+                    "type": "github"
+                }
+            ],
+            "install-path": "./semver"
+        },
+        {
+            "name": "cweagans/composer-patches",
+            "version": "1.7.3",
+            "version_normalized": "1.7.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cweagans/composer-patches.git",
+                "reference": "e190d4466fe2b103a55467dfa83fc2fecfcaf2db"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://artifacts.plesk.tech/artifactory/api/composer/packagist-plesk/vcs-dists/zip/cweagans/composer-patches/e190d4466fe2b103a55467dfa83fc2fecfcaf2db",
+                "reference": "e190d4466fe2b103a55467dfa83fc2fecfcaf2db",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0 || ^2.0",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "composer/composer": "~1.0 || ~2.0",
+                "phpunit/phpunit": "~4.6"
+            },
+            "time": "2022-12-20T22:53:13+00:00",
+            "type": "composer-plugin",
+            "extra": {
+                "class": "cweagans\\Composer\\Patches"
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "cweagans\\Composer\\": "src"
+                }
+            },
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Cameron Eagans",
+                    "email": "me@cweagans.net"
+                }
+            ],
+            "description": "Provides a way to patch Composer packages.",
+            "support": {
+                "issues": "https://github.com/cweagans/composer-patches/issues",
+                "source": "https://github.com/cweagans/composer-patches/tree/1.7.3"
+            },
+            "install-path": "../cweagans/composer-patches"
+        },
+        {
+            "name": "plesk/wp-cli-toolkit-command",
+            "version": "dev-master",
+            "version_normalized": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webpros-wordpress/wp-cli-toolkit-command.git",
+                "reference": "cbb4f418aeddf87c62d3df2a3b99a3be36928e0b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://artifacts.plesk.tech/artifactory/api/composer/composer-plesk/direct-dists/plesk/wp-cli-toolkit-command/dev-master/17669980099-cbb4f418aeddf87c62d3df2a3b99a3be36928e0b.zip"
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=5.4",
+                "wp-cli/cron-command": "^2.0",
+                "wp-cli/extension-command": "^2.0",
+                "wp-cli/rewrite-command": "^2.0",
+                "wp-cli/wp-cli": "*"
+            },
+            "require-dev": {
+                "behat/behat": "~2.5"
+            },
+            "time": "2025-09-12T09:08:12+00:00",
+            "type": "wp-cli-package",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                },
+                "bundled": true,
+                "commands": [
+                    "admin-username",
+                    "config-settings",
+                    "db-prefix",
+                    "instance",
+                    "maintenance-mode",
+                    "release",
+                    "security-keys",
+                    "version-info"
+                ]
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "": "src/"
+                },
+                "files": [
+                    "toolkit-command.php"
+                ]
+            },
+            "license": [
+                "proprietary"
+            ],
+            "homepage": "https://github.com/webpros-wordpress/wp-cli-toolkit-command",
+            "install-path": "../plesk/wp-cli-toolkit-command"
+        },
+        {
+            "name": "symfony/finder",
+            "version": "v3.4.47",
+            "version_normalized": "3.4.47.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/finder.git",
+                "reference": "b6b6ad3db3edb1b4b1c1896b1975fb684994de6e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://artifacts.plesk.tech/artifactory/api/composer/packagist-plesk/vcs-dists/zip/symfony/finder/b6b6ad3db3edb1b4b1c1896b1975fb684994de6e",
+                "reference": "b6b6ad3db3edb1b4b1c1896b1975fb684994de6e",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.5.9|>=7.0.8"
+            },
+            "time": "2020-11-16T17:02:08+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Finder\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Finder Component",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/finder/tree/v3.4.47"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "install-path": "../symfony/finder"
+        },
+        {
+            "name": "wp-cli/checksum-command",
+            "version": "v2.3.1",
+            "version_normalized": "2.3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wp-cli/checksum-command.git",
+                "reference": "39992dbd66835f8d5c2cc5bfeacf9d2c450cbafe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://artifacts.plesk.tech/artifactory/api/composer/packagist-plesk/vcs-dists/zip/wp-cli/checksum-command/39992dbd66835f8d5c2cc5bfeacf9d2c450cbafe",
+                "reference": "39992dbd66835f8d5c2cc5bfeacf9d2c450cbafe",
+                "shasum": ""
+            },
+            "require": {
+                "wp-cli/wp-cli": "^2.12"
+            },
+            "require-dev": {
+                "wp-cli/extension-command": "^1.2 || ^2",
+                "wp-cli/wp-cli-tests": "^4"
+            },
+            "time": "2025-04-10T11:02:20+00:00",
+            "type": "wp-cli-package",
+            "extra": {
+                "bundled": true,
+                "commands": [
+                    "core verify-checksums",
+                    "plugin verify-checksums"
+                ],
+                "branch-alias": {
+                    "dev-main": "2.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "checksum-command.php"
+                ],
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Bachhuber",
+                    "email": "daniel@runcommand.io",
+                    "homepage": "https://runcommand.io"
+                }
+            ],
+            "description": "Verifies file integrity by comparing to published checksums.",
+            "homepage": "https://github.com/wp-cli/checksum-command",
+            "support": {
+                "issues": "https://github.com/wp-cli/checksum-command/issues",
+                "source": "https://github.com/wp-cli/checksum-command/tree/v2.3.1"
+            },
+            "install-path": "../wp-cli/checksum-command"
+        },
+        {
+            "name": "wp-cli/config-command",
+            "version": "v2.3.8",
+            "version_normalized": "2.3.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wp-cli/config-command.git",
+                "reference": "994b3dc9e8284fc978366920d5c5ae0dde3a004e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://artifacts.plesk.tech/artifactory/api/composer/packagist-plesk/vcs-dists/zip/wp-cli/config-command/994b3dc9e8284fc978366920d5c5ae0dde3a004e",
+                "reference": "994b3dc9e8284fc978366920d5c5ae0dde3a004e",
+                "shasum": ""
+            },
+            "require": {
+                "wp-cli/wp-cli": "^2.12",
+                "wp-cli/wp-config-transformer": "^1.4.0"
+            },
+            "require-dev": {
+                "wp-cli/db-command": "^1.3 || ^2",
+                "wp-cli/wp-cli-tests": "^4.2.8"
+            },
+            "time": "2025-04-11T09:37:43+00:00",
+            "type": "wp-cli-package",
+            "extra": {
+                "bundled": true,
+                "commands": [
+                    "config",
+                    "config edit",
+                    "config delete",
+                    "config create",
+                    "config get",
+                    "config has",
+                    "config is-true",
+                    "config list",
+                    "config path",
+                    "config set",
+                    "config shuffle-salts"
+                ],
+                "branch-alias": {
+                    "dev-main": "2.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "config-command.php"
+                ],
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Bachhuber",
+                    "email": "daniel@runcommand.io",
+                    "homepage": "https://runcommand.io"
+                },
+                {
+                    "name": "Alain Schlesser",
+                    "email": "alain.schlesser@gmail.com",
+                    "homepage": "https://www.alainschlesser.com"
+                }
+            ],
+            "description": "Generates and reads the wp-config.php file.",
+            "homepage": "https://github.com/wp-cli/config-command",
+            "support": {
+                "issues": "https://github.com/wp-cli/config-command/issues",
+                "source": "https://github.com/wp-cli/config-command/tree/v2.3.8"
+            },
+            "install-path": "../wp-cli/config-command"
+        },
+        {
+            "name": "wp-cli/core-command",
+            "version": "v2.1.22",
+            "version_normalized": "2.1.22.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wp-cli/core-command.git",
+                "reference": "ac6f8d742808e11e349ce099c7de2fc3c7009b84"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://artifacts.plesk.tech/artifactory/api/composer/packagist-plesk/vcs-dists/zip/wp-cli/core-command/ac6f8d742808e11e349ce099c7de2fc3c7009b84",
+                "reference": "ac6f8d742808e11e349ce099c7de2fc3c7009b84",
+                "shasum": ""
+            },
+            "require": {
+                "composer/semver": "^1.4 || ^2 || ^3",
+                "wp-cli/wp-cli": "^2.12"
+            },
+            "require-dev": {
+                "wp-cli/checksum-command": "^1 || ^2",
+                "wp-cli/db-command": "^1.3 || ^2",
+                "wp-cli/entity-command": "^1.3 || ^2",
+                "wp-cli/extension-command": "^1.2 || ^2",
+                "wp-cli/wp-cli-tests": "^5"
+            },
+            "time": "2025-09-04T08:14:53+00:00",
+            "type": "wp-cli-package",
+            "extra": {
+                "bundled": true,
+                "commands": [
+                    "core",
+                    "core check-update",
+                    "core download",
+                    "core install",
+                    "core is-installed",
+                    "core multisite-convert",
+                    "core multisite-install",
+                    "core update",
+                    "core update-db",
+                    "core version"
+                ],
+                "branch-alias": {
+                    "dev-main": "2.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "core-command.php"
+                ],
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Bachhuber",
+                    "email": "daniel@runcommand.io",
+                    "homepage": "https://runcommand.io"
+                }
+            ],
+            "description": "Downloads, installs, updates, and manages a WordPress installation.",
+            "homepage": "https://github.com/wp-cli/core-command",
+            "support": {
+                "issues": "https://github.com/wp-cli/core-command/issues",
+                "source": "https://github.com/wp-cli/core-command/tree/v2.1.22"
+            },
+            "install-path": "../wp-cli/core-command"
+        },
+        {
+            "name": "wp-cli/cron-command",
+            "version": "v2.3.2",
+            "version_normalized": "2.3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wp-cli/cron-command.git",
+                "reference": "6f450028a75ebd275f12cad62959a0709bf3e7c1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://artifacts.plesk.tech/artifactory/api/composer/packagist-plesk/vcs-dists/zip/wp-cli/cron-command/6f450028a75ebd275f12cad62959a0709bf3e7c1",
+                "reference": "6f450028a75ebd275f12cad62959a0709bf3e7c1",
+                "shasum": ""
+            },
+            "require": {
+                "wp-cli/wp-cli": "^2.12"
+            },
+            "require-dev": {
+                "wp-cli/entity-command": "^1.3 || ^2",
+                "wp-cli/eval-command": "^2.0",
+                "wp-cli/server-command": "^2.0",
+                "wp-cli/wp-cli-tests": "^4"
+            },
+            "time": "2025-04-02T11:55:20+00:00",
+            "type": "wp-cli-package",
+            "extra": {
+                "bundled": true,
+                "commands": [
+                    "cron",
+                    "cron test",
+                    "cron event",
+                    "cron event delete",
+                    "cron event list",
+                    "cron event run",
+                    "cron event schedule",
+                    "cron schedule",
+                    "cron schedule list",
+                    "cron event unschedule"
+                ],
+                "branch-alias": {
+                    "dev-main": "2.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "cron-command.php"
+                ],
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Bachhuber",
+                    "email": "daniel@runcommand.io",
+                    "homepage": "https://runcommand.io"
+                }
+            ],
+            "description": "Tests, runs, and deletes WP-Cron events; manages WP-Cron schedules.",
+            "homepage": "https://github.com/wp-cli/cron-command",
+            "support": {
+                "issues": "https://github.com/wp-cli/cron-command/issues",
+                "source": "https://github.com/wp-cli/cron-command/tree/v2.3.2"
+            },
+            "install-path": "../wp-cli/cron-command"
+        },
+        {
+            "name": "wp-cli/db-command",
+            "version": "v2.1.3",
+            "version_normalized": "2.1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wp-cli/db-command.git",
+                "reference": "f857c91454d7092fa672bc388512a51752d9264a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://artifacts.plesk.tech/artifactory/api/composer/packagist-plesk/vcs-dists/zip/wp-cli/db-command/f857c91454d7092fa672bc388512a51752d9264a",
+                "reference": "f857c91454d7092fa672bc388512a51752d9264a",
+                "shasum": ""
+            },
+            "require": {
+                "wp-cli/wp-cli": "^2.12"
+            },
+            "require-dev": {
+                "wp-cli/entity-command": "^1.3 || ^2",
+                "wp-cli/wp-cli-tests": "^4"
+            },
+            "time": "2025-04-10T11:02:04+00:00",
+            "type": "wp-cli-package",
+            "extra": {
+                "bundled": true,
+                "commands": [
+                    "db",
+                    "db clean",
+                    "db create",
+                    "db drop",
+                    "db reset",
+                    "db check",
+                    "db optimize",
+                    "db prefix",
+                    "db repair",
+                    "db cli",
+                    "db query",
+                    "db export",
+                    "db import",
+                    "db search",
+                    "db tables",
+                    "db size",
+                    "db columns"
+                ],
+                "branch-alias": {
+                    "dev-main": "2.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "db-command.php"
+                ],
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Bachhuber",
+                    "email": "daniel@runcommand.io",
+                    "homepage": "https://runcommand.io"
+                }
+            ],
+            "description": "Performs basic database operations using credentials stored in wp-config.php.",
+            "homepage": "https://github.com/wp-cli/db-command",
+            "support": {
+                "issues": "https://github.com/wp-cli/db-command/issues",
+                "source": "https://github.com/wp-cli/db-command/tree/v2.1.3"
+            },
+            "install-path": "../wp-cli/db-command"
+        },
+        {
+            "name": "wp-cli/entity-command",
+            "version": "v2.8.4",
+            "version_normalized": "2.8.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wp-cli/entity-command.git",
+                "reference": "213611f8ab619ca137d983e9b987f7fbf1ac21d4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://artifacts.plesk.tech/artifactory/api/composer/packagist-plesk/vcs-dists/zip/wp-cli/entity-command/213611f8ab619ca137d983e9b987f7fbf1ac21d4",
+                "reference": "213611f8ab619ca137d983e9b987f7fbf1ac21d4",
+                "shasum": ""
+            },
+            "require": {
+                "wp-cli/wp-cli": "^2.12"
+            },
+            "require-dev": {
+                "wp-cli/cache-command": "^1 || ^2",
+                "wp-cli/db-command": "^1.3 || ^2",
+                "wp-cli/extension-command": "^1.2 || ^2",
+                "wp-cli/media-command": "^1.1 || ^2",
+                "wp-cli/super-admin-command": "^1 || ^2",
+                "wp-cli/wp-cli-tests": "^4"
+            },
+            "time": "2025-05-06T16:12:49+00:00",
+            "type": "wp-cli-package",
+            "extra": {
+                "bundled": true,
+                "commands": [
+                    "comment",
+                    "comment approve",
+                    "comment count",
+                    "comment create",
+                    "comment delete",
+                    "comment exists",
+                    "comment generate",
+                    "comment get",
+                    "comment list",
+                    "comment meta",
+                    "comment meta add",
+                    "comment meta delete",
+                    "comment meta get",
+                    "comment meta list",
+                    "comment meta patch",
+                    "comment meta pluck",
+                    "comment meta update",
+                    "comment recount",
+                    "comment spam",
+                    "comment status",
+                    "comment trash",
+                    "comment unapprove",
+                    "comment unspam",
+                    "comment untrash",
+                    "comment update",
+                    "menu",
+                    "menu create",
+                    "menu delete",
+                    "menu item",
+                    "menu item add-custom",
+                    "menu item add-post",
+                    "menu item add-term",
+                    "menu item delete",
+                    "menu item list",
+                    "menu item update",
+                    "menu list",
+                    "menu location",
+                    "menu location assign",
+                    "menu location list",
+                    "menu location remove",
+                    "network meta",
+                    "network meta add",
+                    "network meta delete",
+                    "network meta get",
+                    "network meta list",
+                    "network meta patch",
+                    "network meta pluck",
+                    "network meta update",
+                    "option",
+                    "option add",
+                    "option delete",
+                    "option get",
+                    "option list",
+                    "option patch",
+                    "option pluck",
+                    "option update",
+                    "option set-autoload",
+                    "option get-autoload",
+                    "post",
+                    "post create",
+                    "post delete",
+                    "post edit",
+                    "post exists",
+                    "post generate",
+                    "post get",
+                    "post list",
+                    "post meta",
+                    "post meta add",
+                    "post meta clean-duplicates",
+                    "post meta delete",
+                    "post meta get",
+                    "post meta list",
+                    "post meta patch",
+                    "post meta pluck",
+                    "post meta update",
+                    "post term",
+                    "post term add",
+                    "post term list",
+                    "post term remove",
+                    "post term set",
+                    "post update",
+                    "post url-to-id",
+                    "post-type",
+                    "post-type get",
+                    "post-type list",
+                    "site",
+                    "site activate",
+                    "site archive",
+                    "site create",
+                    "site generate",
+                    "site deactivate",
+                    "site delete",
+                    "site empty",
+                    "site list",
+                    "site mature",
+                    "site meta",
+                    "site meta add",
+                    "site meta delete",
+                    "site meta get",
+                    "site meta list",
+                    "site meta patch",
+                    "site meta pluck",
+                    "site meta update",
+                    "site option",
+                    "site private",
+                    "site public",
+                    "site spam",
+                    "site unarchive",
+                    "site unmature",
+                    "site unspam",
+                    "taxonomy",
+                    "taxonomy get",
+                    "taxonomy list",
+                    "term",
+                    "term create",
+                    "term delete",
+                    "term generate",
+                    "term get",
+                    "term list",
+                    "term meta",
+                    "term meta add",
+                    "term meta delete",
+                    "term meta get",
+                    "term meta list",
+                    "term meta patch",
+                    "term meta pluck",
+                    "term meta update",
+                    "term recount",
+                    "term update",
+                    "user",
+                    "user add-cap",
+                    "user add-role",
+                    "user application-password",
+                    "user application-password create",
+                    "user application-password delete",
+                    "user application-password exists",
+                    "user application-password get",
+                    "user application-password list",
+                    "user application-password record-usage",
+                    "user application-password update",
+                    "user create",
+                    "user delete",
+                    "user exists",
+                    "user generate",
+                    "user get",
+                    "user import-csv",
+                    "user list",
+                    "user list-caps",
+                    "user meta",
+                    "user meta add",
+                    "user meta delete",
+                    "user meta get",
+                    "user meta list",
+                    "user meta patch",
+                    "user meta pluck",
+                    "user meta update",
+                    "user remove-cap",
+                    "user remove-role",
+                    "user reset-password",
+                    "user session",
+                    "user session destroy",
+                    "user session list",
+                    "user set-role",
+                    "user signup",
+                    "user signup activate",
+                    "user signup delete",
+                    "user signup get",
+                    "user signup list",
+                    "user spam",
+                    "user term",
+                    "user term add",
+                    "user term list",
+                    "user term remove",
+                    "user term set",
+                    "user unspam",
+                    "user update"
+                ],
+                "branch-alias": {
+                    "dev-main": "2.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "entity-command.php"
+                ],
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Bachhuber",
+                    "email": "daniel@runcommand.io",
+                    "homepage": "https://runcommand.io"
+                }
+            ],
+            "description": "Manage WordPress comments, menus, options, posts, sites, terms, and users.",
+            "homepage": "https://github.com/wp-cli/entity-command",
+            "support": {
+                "issues": "https://github.com/wp-cli/entity-command/issues",
+                "source": "https://github.com/wp-cli/entity-command/tree/v2.8.4"
+            },
+            "install-path": "../wp-cli/entity-command"
+        },
+        {
+            "name": "wp-cli/extension-command",
+            "version": "v2.1.24",
+            "version_normalized": "2.1.24.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wp-cli/extension-command.git",
+                "reference": "d21a2f504ac43a86b6b08697669b5b0844748133"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://artifacts.plesk.tech/artifactory/api/composer/packagist-plesk/vcs-dists/zip/wp-cli/extension-command/d21a2f504ac43a86b6b08697669b5b0844748133",
+                "reference": "d21a2f504ac43a86b6b08697669b5b0844748133",
+                "shasum": ""
+            },
+            "require": {
+                "composer/semver": "^1.4 || ^2 || ^3",
+                "wp-cli/wp-cli": "^2.12"
+            },
+            "require-dev": {
+                "wp-cli/cache-command": "^2.0",
+                "wp-cli/entity-command": "^1.3 || ^2",
+                "wp-cli/language-command": "^2.0",
+                "wp-cli/scaffold-command": "^1.2 || ^2",
+                "wp-cli/wp-cli-tests": "^4.3.7"
+            },
+            "time": "2025-05-06T19:17:53+00:00",
+            "type": "wp-cli-package",
+            "extra": {
+                "bundled": true,
+                "commands": [
+                    "plugin",
+                    "plugin activate",
+                    "plugin deactivate",
+                    "plugin delete",
+                    "plugin get",
+                    "plugin install",
+                    "plugin is-installed",
+                    "plugin list",
+                    "plugin path",
+                    "plugin search",
+                    "plugin status",
+                    "plugin toggle",
+                    "plugin uninstall",
+                    "plugin update",
+                    "theme",
+                    "theme activate",
+                    "theme delete",
+                    "theme disable",
+                    "theme enable",
+                    "theme get",
+                    "theme install",
+                    "theme is-installed",
+                    "theme list",
+                    "theme mod",
+                    "theme mod get",
+                    "theme mod set",
+                    "theme mod remove",
+                    "theme path",
+                    "theme search",
+                    "theme status",
+                    "theme update",
+                    "theme mod list"
+                ],
+                "branch-alias": {
+                    "dev-main": "2.x-dev"
+                },
+                "patches_applied": {
+                    "Fix EXTWPTOOLK-8756": "EXTWPTOOLK-8756.patch",
+                    "Fix EXTWPTOOLK-8695": "EXTWPTOOLK-8695.patch",
+                    "Fix EXTWPTOOLK-11710": "EXTWPTOOLK-11710.patch"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "extension-command.php"
+                ],
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Bachhuber",
+                    "email": "daniel@runcommand.io",
+                    "homepage": "https://runcommand.io"
+                },
+                {
+                    "name": "Alain Schlesser",
+                    "email": "alain.schlesser@gmail.com",
+                    "homepage": "https://www.alainschlesser.com"
+                }
+            ],
+            "description": "Manages plugins and themes, including installs, activations, and updates.",
+            "homepage": "https://github.com/wp-cli/extension-command",
+            "support": {
+                "issues": "https://github.com/wp-cli/extension-command/issues",
+                "source": "https://github.com/wp-cli/extension-command/tree/v2.1.24"
+            },
+            "install-path": "../wp-cli/extension-command"
+        },
+        {
+            "name": "wp-cli/language-command",
+            "version": "v2.0.25",
+            "version_normalized": "2.0.25.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wp-cli/language-command.git",
+                "reference": "ad1bbfbf2699eff415436a00bb4195900fa1cfe5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://artifacts.plesk.tech/artifactory/api/composer/packagist-plesk/vcs-dists/zip/wp-cli/language-command/ad1bbfbf2699eff415436a00bb4195900fa1cfe5",
+                "reference": "ad1bbfbf2699eff415436a00bb4195900fa1cfe5",
+                "shasum": ""
+            },
+            "require": {
+                "wp-cli/wp-cli": "^2.12"
+            },
+            "require-dev": {
+                "wp-cli/db-command": "^1.3 || ^2",
+                "wp-cli/entity-command": "^1.3 || ^2",
+                "wp-cli/extension-command": "^1.2 || ^2",
+                "wp-cli/wp-cli-tests": "^5"
+            },
+            "time": "2025-09-04T10:30:12+00:00",
+            "type": "wp-cli-package",
+            "extra": {
+                "bundled": true,
+                "commands": [
+                    "language",
+                    "language core",
+                    "language core activate",
+                    "language core is-installed",
+                    "language core install",
+                    "language core list",
+                    "language core uninstall",
+                    "language core update",
+                    "language plugin",
+                    "language plugin is-installed",
+                    "language plugin install",
+                    "language plugin list",
+                    "language plugin uninstall",
+                    "language plugin update",
+                    "language theme",
+                    "language theme is-installed",
+                    "language theme install",
+                    "language theme list",
+                    "language theme uninstall",
+                    "language theme update",
+                    "site switch-language"
+                ],
+                "branch-alias": {
+                    "dev-main": "2.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "language-command.php"
+                ],
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Bachhuber",
+                    "email": "daniel@runcommand.io",
+                    "homepage": "https://runcommand.io"
+                }
+            ],
+            "description": "Installs, activates, and manages language packs.",
+            "homepage": "https://github.com/wp-cli/language-command",
+            "support": {
+                "issues": "https://github.com/wp-cli/language-command/issues",
+                "source": "https://github.com/wp-cli/language-command/tree/v2.0.25"
+            },
+            "install-path": "../wp-cli/language-command"
+        },
+        {
+            "name": "wp-cli/maintenance-mode-command",
+            "version": "v2.1.3",
+            "version_normalized": "2.1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wp-cli/maintenance-mode-command.git",
+                "reference": "b947e094e00b7b68c6376ec9bd03303515864062"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://artifacts.plesk.tech/artifactory/api/composer/packagist-plesk/vcs-dists/zip/wp-cli/maintenance-mode-command/b947e094e00b7b68c6376ec9bd03303515864062",
+                "reference": "b947e094e00b7b68c6376ec9bd03303515864062",
+                "shasum": ""
+            },
+            "require": {
+                "wp-cli/wp-cli": "^2.12"
+            },
+            "require-dev": {
+                "wp-cli/wp-cli-tests": "^4"
+            },
+            "time": "2024-11-24T17:26:30+00:00",
+            "type": "wp-cli-package",
+            "extra": {
+                "bundled": true,
+                "commands": [
+                    "maintenance-mode",
+                    "maintenance-mode activate",
+                    "maintenance-mode deactivate",
+                    "maintenance-mode status",
+                    "maintenance-mode is-active"
+                ],
+                "branch-alias": {
+                    "dev-main": "2.x-dev"
+                },
+                "patches_applied": {
+                    "Fix EXTWPTOOLK-12324": "EXTWPTOOLK-12324.patch"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "maintenance-mode-command.php"
+                ],
+                "psr-4": {
+                    "WP_CLI\\MaintenanceMode\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thrijith Thankachan",
+                    "email": "thrijith13@gmail.com",
+                    "homepage": "https://thrijith.com"
+                }
+            ],
+            "description": "Activates, deactivates or checks the status of the maintenance mode of a site.",
+            "homepage": "https://github.com/wp-cli/maintenance-mode-command",
+            "support": {
+                "issues": "https://github.com/wp-cli/maintenance-mode-command/issues",
+                "source": "https://github.com/wp-cli/maintenance-mode-command/tree/v2.1.3"
+            },
+            "install-path": "../wp-cli/maintenance-mode-command"
+        },
+        {
+            "name": "wp-cli/mustache",
+            "version": "v2.14.99",
+            "version_normalized": "2.14.99.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wp-cli/mustache.php.git",
+                "reference": "ca23b97ac35fbe01c160549eb634396183d04a59"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://artifacts.plesk.tech/artifactory/api/composer/packagist-plesk/vcs-dists/zip/wp-cli/mustache.php/ca23b97ac35fbe01c160549eb634396183d04a59",
+                "reference": "ca23b97ac35fbe01c160549eb634396183d04a59",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "replace": {
+                "mustache/mustache": "^2.14.2"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "~2.19.3",
+                "yoast/phpunit-polyfills": "^2.0"
+            },
+            "time": "2025-05-06T16:15:37+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-0": {
+                    "Mustache": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Justin Hileman",
+                    "email": "justin@justinhileman.info",
+                    "homepage": "http://justinhileman.com"
+                }
+            ],
+            "description": "A Mustache implementation in PHP.",
+            "homepage": "https://github.com/bobthecow/mustache.php",
+            "keywords": [
+                "mustache",
+                "templating"
+            ],
+            "support": {
+                "source": "https://github.com/wp-cli/mustache.php/tree/v2.14.99"
+            },
+            "install-path": "../wp-cli/mustache"
+        },
+        {
+            "name": "wp-cli/mustangostang-spyc",
+            "version": "0.6.3",
+            "version_normalized": "0.6.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wp-cli/spyc.git",
+                "reference": "6aa0b4da69ce9e9a2c8402dab8d43cf32c581cc7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://artifacts.plesk.tech/artifactory/api/composer/packagist-plesk/vcs-dists/zip/wp-cli/spyc/6aa0b4da69ce9e9a2c8402dab8d43cf32c581cc7",
+                "reference": "6aa0b4da69ce9e9a2c8402dab8d43cf32c581cc7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.3.*@dev"
+            },
+            "time": "2017-04-25T11:26:20+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.5.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "includes/functions.php"
+                ],
+                "psr-4": {
+                    "Mustangostang\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "mustangostang",
+                    "email": "vlad.andersen@gmail.com"
+                }
+            ],
+            "description": "A simple YAML loader/dumper class for PHP (WP-CLI fork)",
+            "homepage": "https://github.com/mustangostang/spyc/",
+            "support": {
+                "source": "https://github.com/wp-cli/spyc/tree/autoload"
+            },
+            "install-path": "../wp-cli/mustangostang-spyc"
+        },
+        {
+            "name": "wp-cli/php-cli-tools",
+            "version": "v0.12.5",
+            "version_normalized": "0.12.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wp-cli/php-cli-tools.git",
+                "reference": "34b83b4f700df8a4ec3fd17bf7e7e7d8ca5f28da"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://artifacts.plesk.tech/artifactory/api/composer/packagist-plesk/vcs-dists/zip/wp-cli/php-cli-tools/34b83b4f700df8a4ec3fd17bf7e7e7d8ca5f28da",
+                "reference": "34b83b4f700df8a4ec3fd17bf7e7e7d8ca5f28da",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 5.6.0"
+            },
+            "require-dev": {
+                "roave/security-advisories": "dev-latest",
+                "wp-cli/wp-cli-tests": "^4"
+            },
+            "time": "2025-03-26T16:13:46+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.11.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "lib/cli/cli.php"
+                ],
+                "psr-0": {
+                    "cli": "lib/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Bachhuber",
+                    "email": "daniel@handbuilt.co",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "James Logsdon",
+                    "email": "jlogsdon@php.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Console utilities for PHP",
+            "homepage": "http://github.com/wp-cli/php-cli-tools",
+            "keywords": [
+                "cli",
+                "console"
+            ],
+            "support": {
+                "issues": "https://github.com/wp-cli/php-cli-tools/issues",
+                "source": "https://github.com/wp-cli/php-cli-tools/tree/v0.12.5"
+            },
+            "install-path": "../wp-cli/php-cli-tools"
+        },
+        {
+            "name": "wp-cli/rewrite-command",
+            "version": "v2.0.15",
+            "version_normalized": "2.0.15.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wp-cli/rewrite-command.git",
+                "reference": "277ec689b7c268680ff429f52558508622c9b34c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://artifacts.plesk.tech/artifactory/api/composer/packagist-plesk/vcs-dists/zip/wp-cli/rewrite-command/277ec689b7c268680ff429f52558508622c9b34c",
+                "reference": "277ec689b7c268680ff429f52558508622c9b34c",
+                "shasum": ""
+            },
+            "require": {
+                "wp-cli/wp-cli": "^2.12"
+            },
+            "require-dev": {
+                "wp-cli/entity-command": "^1.3 || ^2",
+                "wp-cli/wp-cli-tests": "^4"
+            },
+            "time": "2025-04-02T12:09:09+00:00",
+            "type": "wp-cli-package",
+            "extra": {
+                "bundled": true,
+                "commands": [
+                    "rewrite",
+                    "rewrite flush",
+                    "rewrite list",
+                    "rewrite structure"
+                ],
+                "branch-alias": {
+                    "dev-main": "2.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "rewrite-command.php"
+                ],
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Bachhuber",
+                    "email": "daniel@runcommand.io",
+                    "homepage": "https://runcommand.io"
+                }
+            ],
+            "description": "Lists or flushes the site's rewrite rules, updates the permalink structure.",
+            "homepage": "https://github.com/wp-cli/rewrite-command",
+            "support": {
+                "issues": "https://github.com/wp-cli/rewrite-command/issues",
+                "source": "https://github.com/wp-cli/rewrite-command/tree/v2.0.15"
+            },
+            "install-path": "../wp-cli/rewrite-command"
+        },
+        {
+            "name": "wp-cli/search-replace-command",
+            "version": "v2.1.8",
+            "version_normalized": "2.1.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wp-cli/search-replace-command.git",
+                "reference": "65397a7bfdd5ba2cff26f3ab03ef0bcb916c0057"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://artifacts.plesk.tech/artifactory/api/composer/packagist-plesk/vcs-dists/zip/wp-cli/search-replace-command/65397a7bfdd5ba2cff26f3ab03ef0bcb916c0057",
+                "reference": "65397a7bfdd5ba2cff26f3ab03ef0bcb916c0057",
+                "shasum": ""
+            },
+            "require": {
+                "wp-cli/wp-cli": "^2.12"
+            },
+            "require-dev": {
+                "wp-cli/db-command": "^1.3 || ^2",
+                "wp-cli/entity-command": "^1.3 || ^2",
+                "wp-cli/extension-command": "^1.2 || ^2",
+                "wp-cli/wp-cli-tests": "^4"
+            },
+            "time": "2025-04-02T13:07:50+00:00",
+            "type": "wp-cli-package",
+            "extra": {
+                "bundled": true,
+                "commands": [
+                    "search-replace"
+                ],
+                "branch-alias": {
+                    "dev-main": "2.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "search-replace-command.php"
+                ],
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Bachhuber",
+                    "email": "daniel@runcommand.io",
+                    "homepage": "https://runcommand.io"
+                }
+            ],
+            "description": "Searches/replaces strings in the database.",
+            "homepage": "https://github.com/wp-cli/search-replace-command",
+            "support": {
+                "issues": "https://github.com/wp-cli/search-replace-command/issues",
+                "source": "https://github.com/wp-cli/search-replace-command/tree/v2.1.8"
+            },
+            "install-path": "../wp-cli/search-replace-command"
+        },
+        {
+            "name": "wp-cli/wp-cli",
+            "version": "v2.12.0",
+            "version_normalized": "2.12.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wp-cli/wp-cli.git",
+                "reference": "03d30d4138d12b4bffd8b507b82e56e129e0523f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://artifacts.plesk.tech/artifactory/api/composer/packagist-plesk/vcs-dists/zip/wp-cli/wp-cli/03d30d4138d12b4bffd8b507b82e56e129e0523f",
+                "reference": "03d30d4138d12b4bffd8b507b82e56e129e0523f",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": "^5.6 || ^7.0 || ^8.0",
+                "symfony/finder": ">2.7",
+                "wp-cli/mustache": "^2.14.99",
+                "wp-cli/mustangostang-spyc": "^0.6.3",
+                "wp-cli/php-cli-tools": "~0.12.4"
+            },
+            "require-dev": {
+                "wp-cli/db-command": "^1.3 || ^2",
+                "wp-cli/entity-command": "^1.2 || ^2",
+                "wp-cli/extension-command": "^1.1 || ^2",
+                "wp-cli/package-command": "^1 || ^2",
+                "wp-cli/wp-cli-tests": "^4.3.10"
+            },
+            "suggest": {
+                "ext-readline": "Include for a better --prompt implementation",
+                "ext-zip": "Needed to support extraction of ZIP archives when doing downloads or updates"
+            },
+            "time": "2025-05-07T01:16:12+00:00",
+            "bin": [
+                "bin/wp",
+                "bin/wp.bat"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "2.12.x-dev"
+                },
+                "patches_applied": {
+                    "Fix EXTWPTOOLK-6117": "EXTWPTOOLK-6117.patch"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-0": {
+                    "WP_CLI\\": "php/"
+                },
+                "classmap": [
+                    "php/class-wp-cli.php",
+                    "php/class-wp-cli-command.php"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "WP-CLI framework",
+            "homepage": "https://wp-cli.org",
+            "keywords": [
+                "cli",
+                "wordpress"
+            ],
+            "support": {
+                "docs": "https://make.wordpress.org/cli/handbook/",
+                "issues": "https://github.com/wp-cli/wp-cli/issues",
+                "source": "https://github.com/wp-cli/wp-cli"
+            },
+            "install-path": "../wp-cli/wp-cli"
+        },
+        {
+            "name": "wp-cli/wp-config-transformer",
+            "version": "v1.4.2",
+            "version_normalized": "1.4.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wp-cli/wp-config-transformer.git",
+                "reference": "b78cab1159b43eb5ee097e2cfafe5eab573d2a8a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://artifacts.plesk.tech/artifactory/api/composer/packagist-plesk/vcs-dists/zip/wp-cli/wp-config-transformer/b78cab1159b43eb5ee097e2cfafe5eab573d2a8a",
+                "reference": "b78cab1159b43eb5ee097e2cfafe5eab573d2a8a",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6 || ^7.0 || ^8.0"
+            },
+            "require-dev": {
+                "wp-cli/wp-cli-tests": "^4.0"
+            },
+            "time": "2025-03-31T08:37:05+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "src/WPConfigTransformer.php"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Frankie Jarrett",
+                    "email": "fjarrett@gmail.com"
+                }
+            ],
+            "description": "Programmatically edit a wp-config.php file.",
+            "homepage": "https://github.com/wp-cli/wp-config-transformer",
+            "support": {
+                "issues": "https://github.com/wp-cli/wp-config-transformer/issues",
+                "source": "https://github.com/wp-cli/wp-config-transformer/tree/v1.4.2"
+            },
+            "install-path": "../wp-cli/wp-config-transformer"
+        }
+    ],
+    "dev": false,
+    "dev-package-names": []
+}

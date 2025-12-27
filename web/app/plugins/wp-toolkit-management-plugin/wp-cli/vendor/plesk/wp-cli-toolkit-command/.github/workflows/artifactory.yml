@@ -1,0 +1,23 @@
+name: Artifactory
+
+on:
+  workflow_dispatch:
+  push:
+
+concurrency:
+  group: artifactory-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  tests:
+    name: Build and upload
+    runs-on: webpros-wordpress
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: webpros-plesk/action-artifactory-php@v1
+        with:
+          token: ${{ secrets.ARTIFACTORY_TOKEN }}
+          repository: composer-plesk-local
+          package: plesk/wp-cli-toolkit-command

@@ -1,6 +1,7 @@
 # Application
 web/app/plugins/*
 !web/app/plugins/.gitkeep
+!web/app/plugins/wp-toolkit-management-plugin/
 web/app/mu-plugins/*/
 web/app/themes/twentytwentyfive/
 web/app/themes/hello-elementor/
@@ -20,10 +21,17 @@ web/.htaccess
 .env
 .env.*
 !.env.example
+.env.remote
 
 # Composer
 /vendor
 auth.json
 
+# Local DB dumps
+.db-dumps/
+
 # WP-CLI
 wp-cli.local.yml
+web/wp-toolkit-entry-point.php
+.gitignore
+web/wp-toolkit-wp-config-backup-*.php

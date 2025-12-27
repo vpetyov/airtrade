@@ -1,0 +1,55 @@
+{
+  "name": "plesk/wp-cli-toolkit-command",
+  "description": "",
+  "type": "wp-cli-package",
+  "homepage": "https://github.com/webpros-wordpress/wp-cli-toolkit-command",
+  "license": "proprietary",
+  "autoload": {
+    "psr-4": {
+      "": "src/"
+    },
+    "files": [
+      "toolkit-command.php"
+    ]
+  },
+  "require": {
+    "php": ">=5.4",
+    "ext-json": "*",
+    "wp-cli/cron-command": "^2.0",
+    "wp-cli/extension-command": "^2.0",
+    "wp-cli/rewrite-command": "^2.0",
+    "wp-cli/wp-cli": "*"
+  },
+  "require-dev": {
+    "behat/behat": "~2.5"
+  },
+  "config": {
+    "sort-packages": true,
+    "platform": {
+      "php": "5.4"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.x-dev"
+    },
+    "bundled": true,
+    "commands": [
+      "admin-username",
+      "config-settings",
+      "db-prefix",
+      "instance",
+      "maintenance-mode",
+      "release",
+      "security-keys",
+      "version-info"
+    ]
+  },
+  "version": "dev-master",
+  "source": {
+    "type": "git",
+    "url": "https://github.com/webpros-wordpress/wp-cli-toolkit-command.git",
+    "reference": "cbb4f418aeddf87c62d3df2a3b99a3be36928e0b"
+  },
+  "time": "2025-09-12T09:08:12+00:00"
+}
